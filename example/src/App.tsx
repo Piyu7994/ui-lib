@@ -1,10 +1,18 @@
-import { View, StyleSheet } from 'react-native';
-import { UiLibraryView } from 'react-native-ui-library';
+import { View, StyleSheet, Platform, ToastAndroid } from 'react-native';
+import BasicButton from '../../src/components/atoms/BasicButton';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <UiLibraryView color="#32a852" style={styles.box} />
+      <BasicButton
+        text="Click Here"
+        onClick={() => {
+          if (Platform.OS === 'android')
+            ToastAndroid.show('Button Clicked', ToastAndroid.SHORT);
+          else console.log('Clicked');
+        }}
+        styles={styles.box}
+      />
     </View>
   );
 }
@@ -16,8 +24,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    width: 'auto',
+    height: 'auto',
+    padding: 8,
+    borderRadius: 8,
+    backgroundColor: 'pink',
   },
 });

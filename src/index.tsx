@@ -4,6 +4,7 @@ import {
   Platform,
   type ViewStyle,
 } from 'react-native';
+import BasicButton from './components/atoms/BasicButton';
 
 const LINKING_ERROR =
   `The package 'react-native-ui-library' doesn't seem to be linked. Make sure: \n\n` +
@@ -24,3 +25,5 @@ export const UiLibraryView =
     : () => {
         throw new Error(LINKING_ERROR);
       };
+
+export { BasicButton };
