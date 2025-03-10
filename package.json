@@ -1,6 +1,6 @@
 {
   "name": "@piyu7994/react-native-ui-library",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Desc",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
