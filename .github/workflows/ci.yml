@@ -204,7 +204,7 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" >> ~/.npmrc
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --check-cache || yarn install --check-cache
 
       - name: Run tests
         run: yarn test
