@@ -215,5 +215,5 @@ jobs:
       - name: Publish to GitHub Packages
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ✅ Uses GitHub Actions secret for authentication
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}  # ✅ Uses GitHub Actions secret for authentication
 
