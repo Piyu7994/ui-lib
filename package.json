@@ -1,5 +1,5 @@
 {
-  "name": "react-native-ui-library",
+  "name": "@piyu7994/react-native-ui-library",
   "version": "0.1.0",
   "description": "Desc",
   "source": "./src/index.tsx",
@@ -61,7 +61,7 @@
   },
   "homepage": "https://github.com/Piyu7994/react-native-ui-library#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/@Piyu7994"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
