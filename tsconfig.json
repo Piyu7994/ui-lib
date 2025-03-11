@@ -28,7 +28,7 @@
     "types": ["react", "react-native", "jest", "node"],
     "verbatimModuleSyntax": true,
     "declaration": true,
-    "declarationDir": "lib"
+    "declarationDir": "lib/src"
   },
   "exclude": ["**/__tests__/**", "**/*.test.ts", "**/*.test.tsx"]
 }
