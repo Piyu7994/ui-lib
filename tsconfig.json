@@ -26,6 +26,8 @@
     "strict": true,
     "target": "ESNext",
     "types": ["react", "react-native", "jest", "node"],
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "declarationDir": "lib"
   }
 }
