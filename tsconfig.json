@@ -25,6 +25,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
+    "types": ["react", "react-native", "jest", "node"],
     "verbatimModuleSyntax": true
   }
 }
