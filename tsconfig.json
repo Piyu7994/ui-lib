@@ -29,5 +29,6 @@
     "verbatimModuleSyntax": true,
     "declaration": true,
     "declarationDir": "lib"
-  }
+  },
+  "exclude": ["**/__tests__/**", "**/*.test.ts", "**/*.test.tsx"]
 }
