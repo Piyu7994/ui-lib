@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, type TextInputProps } from "react-native";
 import { colors } from "../../../themes";
 
-interface PtTextInputProps extends TextInputProps {
+export interface PtTextInputProps extends TextInputProps {
     placeholder: string,
     placeholderColor?: string,
     maxLines?: number,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         padding: 8,
         fontSize: 14,
-        color: colors.white
+        color: colors.black
     },
     filled: {
         borderWidth: 1,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         padding: 8,
         fontSize: 14,
         backgroundColor: colors.backgroundColor,
-        color: colors.white
+        color: colors.black
     },
     errorFilled: {
         backgroundColor: colors.errorColor

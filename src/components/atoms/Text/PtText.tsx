@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, type TextStyle } from "react-native";
 import { colors } from "../../../themes";
 
-interface TextProps {
+export interface TextProps {
     text: string,
     defaultStyle?: TextStyle,
     h1?: boolean,
@@ -17,12 +17,20 @@ const PtText: React.FC<TextProps> = ({
     text, h1 = false, h2 = false, h3 = false,
     h1Style = {}, h2Style = {}, h3Style = {}, defaultStyle = {}
 }) => {
+
+    let textStyle: TextStyle[] = [];
+    if (h1) {
+        textStyle = [styles.h1, h1Style]
+    } else if (h2) {
+        textStyle = [styles.h2, h2Style]
+    } else if (h3) {
+        textStyle = [styles.h3, h3Style]
+    }
+
     return (
         <Text style={[
             styles.default, defaultStyle,
-            h1 && [styles.h1, h1Style],
-            h2 && [styles.h2, h2Style],
-            h3 && [styles.h3, h3Style]
+            ...textStyle
         ]}>
             {text}
         </Text>
