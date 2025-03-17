@@ -4,7 +4,7 @@ export const colors = {
     white: "#FFFFFF",
 
     //Button Colors
-    primary: "#C29860",
+    primary: "#205781",
     success: "#009900",
     error: "#EA450F",
     disabled: "gray",
@@ -13,6 +13,9 @@ export const colors = {
     borderColor: "#CCC",
     textColor: "#333",
     backgroundColor: "#393A2C",
-    errorColor: "#EA450F"
+    errorColor: "#EA450F",
+
+    info: "#023047",
+    warning: "#FFCC00",
 
 }
