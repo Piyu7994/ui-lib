@@ -1,6 +1,6 @@
 {
   "name": "@piyu7994/react-native-ui-library",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Desc",
   "source": "./src/index.tsx",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./lib/typescript/module/src/index.d.ts",
+        "types": "./lib/src/index.d.ts",
         "default": "./lib/module/index.js"
       },
       "require": {
