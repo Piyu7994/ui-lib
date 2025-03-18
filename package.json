@@ -1,6 +1,6 @@
 {
   "name": "@piyu7994/react-native-ui-library",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Desc",
   "source": "./src/index.tsx",
   "main": "lib/index.js",
@@ -114,14 +114,12 @@
     "@types/react": "^18.2.44"
   },
   "dependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0",
-    "react-native": ">=0.72.0",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": ">=0.19.13"
   },
   "peerDependencies": {
     "react": ">=18.2.0",
+    "react-dom": ">=18.2.0",
     "react-native": ">=0.72.0"
   },
   "workspaces": [
