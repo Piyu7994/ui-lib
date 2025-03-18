@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { colors } from '../../../themes';
 
-interface ButtonProps {
+export interface ButtonProps {
     title: string;
     type?: 'primary' | 'disabled' | 'loading' | 'error' | 'success';
     onClick: () => void;
